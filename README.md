@@ -10,7 +10,19 @@ $ pip install mds_pycounts_srfrew
 
 ## Usage
 
-- TODO
+`mds_pycounts_srfrew` can be used to count words in a text file and plot results
+as follows:
+
+```python
+from mds_pycounts_srfrew.mds_pycounts_srfrew import count_words
+from mds_pycounts_srfrew.plotting import plot_words
+import matplotlib.pyplot as plt
+
+file_path = "test.txt"  # path to your file
+counts = count_words(file_path)
+fig = plot_words(counts, n=10)
+plt.show()
+```
 
 ## Contributing
 
